@@ -1,8 +1,8 @@
-¿Qué se debe hacer para levantar el proyecto localmente?
-1. Clonar el repositorio ejecutando en la terminal: 
-   git clone https://github.com.git](https://github.com/Facu-Cala/Estandares-para-el-Desarrollo-Web.git
-2. Navegar al directorio del proyecto: 
-   cd Estandares-para-el-Desarrollo-Web
-3. Cambiar a la rama: 
-   git checkout first-version
-4. Abrir el archivo 'index.html' en el navegador. 
+Explicación. para el despliegue en GitHub Pages
+Ingresar a GitHub e ir al repositorio: Estandares-para-el-Desarrollo-Web
+Ir a la pestaña "Settings". 
+En la barra lateral izquierda, buscar la opción que dice "Pages".
+Donde dice "Source", seleccionas la opción "Deploy from a branch".
+Elegí la rama. Dejás la carpeta raíz '/(root)' seleccionada.
+Seleccione "Save".
+
