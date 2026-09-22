@@ -1,5 +1,5 @@
 Despliegue en Git Hub 
-1. Entrás a tu cuenta de GitHub y vas al repositorio.
+1. Entrás GitHub y vas al repositorio.
 2. Clic en la pestaña "Settings".
 3. En la barra lateral izquierda, buscás la sección que dice "Code and automation" y hacés clic en la opción "Pages".
 4. En el centro de la pantalla, vas a ver un apartado llamado "Build and deployment". Donde dice "Source", marcas la opción "Deploy from a branch".
