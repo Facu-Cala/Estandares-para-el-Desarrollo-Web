@@ -3,18 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Cafeteria de esecialidad, venta de cafe y pasteleria">
+    <meta name="description" content="Cafetería de especialidad, venta de café y pastelería">
     <link rel="apple-touch-icon" sizes="180x180" href="icon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
     <link rel="manifest" href="icon/site.webmanifest">
-    <title>The Cafe | Especialidad & Pastelería</title>
+    <title>The Cafe | Especialidad &amp; Pastelería</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header class="nav">
         <nav class="contenedor-menu">
-            <div class="logo-nav">The Cafe</div>
+           
+            <a href="#home" class="logo-nav">The Cafe</a>
             <div class="enlaces-contenedor">
                 <a href="#home" class="enlace-menu">Inicio</a>
                 <a href="#about" class="enlace-menu">Conócenos</a>
@@ -23,36 +24,38 @@
             </div>
         </nav>
     </header>
-    <!-- Banner principal  -->
+
+    
     <section class="banner" id="home">
         <div class="banner-overlay"></div>
         <div class="banner-contenido">
             <span class="etiqueta-banner">Abierto de Lun a Dom — 6am a 9pm</span>
             <h1 class="titulo-banner">the<span class="punto-cafe">.</span>cafe</h1>
-            <p class="subtitulo-banner">Café de especialidad, chipá regional & pastelería artesanal</p>
+            <p class="subtitulo-banner">Café de especialidad, chipá regional &amp; pastelería artesanal</p>
             <div class="direccion-banner">Peatonal Junín y San Lorenzo, Corrientes</div>
             <a href="#menu" class="boton-banner-action">Ver la Carta</a>
         </div>
     </section>
+
     <main class="contenido-pagina">
-        <!-- Sección Quiénes Somos -->
+        
         <section class="seccion-about" id="about">
             <div class="contenedor-about-grid">
-                <!-- Columna izquierda -->
+               
                 <div class="about-col-texto">
                     <span class="subtitulo-seccion">Nuestra Historia</span>
                     <h2 class="titulo-seccion">Identidad litoraleña con granos del mundo</h2>
-                     <p class="parrafo-destacado">El Café fue fundado en la Ciudad de Corrientes por la familia Funalito, uniendo la calidez del servicio litoraleño con los estándares globales del café de especialidad.</p>
+                    <p class="parrafo-destacado">El Café fue fundado en la Ciudad de Corrientes por la familia Funalito, uniendo la calidez del servicio litoraleño con los estándares globales del café de especialidad.</p>
                     <p>Nos encargamos de adquirir granos con puntuación de catación superior, provenientes de fincas seleccionadas de Colombia y Brasil, tostados en Argentina. Honramos nuestras raíces litoraleñas horneando cada mañana el clásico chipá correntino con queso criollo, además de facturas artesanales de manteca y opciones modernas de pastelería de vanguardia.</p>
-                   <blockquote class="cita-bloque">
+                    <blockquote class="cita-bloque">
                         <p class="texto-cita">"Respetar la materia prima de nuestra tierra combinándola con técnicas internacionales de barismo. Lo fresco, lo autóctono y lo bien hecho es nuestro sello."</p>
-                        <cite class="autor-cita">— Cosme Funalito, Tostador & Fundador</cite>
+                        <cite class="autor-cita">— Cosme Funalito, Tostador &amp; Fundador</cite>
                     </blockquote>
                 </div>
-                <!-- Columna derecha -->
+                
                 <div class="about-col-derecha">
                     <div class="tarjeta-info-flotante">
-                        <h3>Tradición & Especialidad</h3>
+                        <h3>Tradición &amp; Especialidad</h3>
                         <p>Lunes a Domingos</p>
                         <p class="hora-info">06:00 a 21:00 hs</p>
                         <p class="ubicacion-info">📍 Junín 1050, Corrientes Capital</p>
@@ -61,15 +64,14 @@
             </div>
         </section>
 
-        <!-- Sección Menú-->
+       
         <section class="seccion-contenedor" id="menu">
             <div class="contenido-centrado">
                 <h2 class="titulo-seccion"><span class="etiqueta-ancha">NUESTRA CARTA</span></h2>
-                <!-- Contenedor divide pastelería y cafetería -->
                 <div class="carta-estatica-grid">
-                    <!--Pastelería y salados -->
+                    
                     <div class="columna-carta">
-                        <h3 class="titulo-columna-menu">Pastelería & Salados</h3>
+                        <h3 class="titulo-columna-menu">Pastelería &amp; Salados</h3>
                         <div class="panel-menu-estatico">
                             <div class="item-menu-tarjeta">
                                 <div class="item-menu-info">
@@ -77,7 +79,8 @@
                                     <p class="descripcion-item">Horneados cada hora con un blend de tres quesos y fécula de mandioca regional. $1.200</p>
                                 </div>
                                 <div class="item-menu-foto">
-                                    <img src="assets/chipa.jpg" alt="Chipá de queso correntino crujiente">
+                                    
+                                    <img src="assets/chipa.jpg" alt="Chipá de queso correntino crujiente" loading="lazy">
                                 </div>
                             </div>
                             <div class="item-menu-tarjeta">
@@ -86,7 +89,7 @@
                                     <p class="descripcion-item">Masa hojaldrada con almíbar ligero. $1.500</p>
                                 </div>
                                 <div class="item-menu-foto">
-                                    <img src="assets/medialuna.jpg" alt="Medialunas de manteca hojaldradas">
+                                    <img src="assets/medialuna.jpg" alt="Medialunas de manteca hojaldradas" loading="lazy">
                                 </div>
                             </div>
                             <div class="item-menu-tarjeta">
@@ -95,22 +98,22 @@
                                     <p class="descripcion-item">El clásico: jamón cocido natural y queso dambo fundido en pan de miga extra fino. $3.400</p>
                                 </div>
                                 <div class="item-menu-foto">
-                                    <img src="assets/tostado.jpg" alt="Tostado clásico de jamón y queso">
+                                    <img src="assets/tostado.jpg" alt="Tostado clásico de jamón y queso" loading="lazy">
                                 </div>
                             </div>
                             <div class="item-menu-tarjeta">
                                 <div class="item-menu-info">
-                                    <h3>Alfajor de Pistacho & DDL</h3>
+                                    <h3>Alfajor de Pistacho &amp; DDL</h3>
                                     <p class="descripcion-item">Tapas de harina de almendras, relleno generoso de dulce de leche repostero y chocolate blanco. $2.100</p>
                                 </div>
                                 <div class="item-menu-foto">
-                                    <img src="assets/alfajores.jpg" alt="Alfajor artesanal argentino con relleno">
+                                    <img src="assets/alfajores.jpg" alt="Alfajor artesanal argentino con relleno" loading="lazy">
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Cafetería de especialidad -->
+                    
                     <div class="columna-carta">
                         <h3 class="titulo-columna-menu">Cafetería de Especialidad</h3>
                         <div class="panel-menu-estatico">
@@ -120,7 +123,7 @@
                                     <p class="descripcion-item">Extracción directa de 60ml de nuestro blend de la casa (Colombia Bourbon). Notas dulces. $1.800</p>
                                 </div>
                                 <div class="item-menu-foto">
-                                    <img src="assets/expresso-doble.jpg" alt="Taza de espresso corto con crema">
+                                    <img src="assets/expresso-doble.jpg" alt="Taza de espresso corto con crema" loading="lazy">
                                 </div>
                             </div>
                             <div class="item-menu-tarjeta">
@@ -129,7 +132,7 @@
                                     <p class="descripcion-item">Servido al estilo clásico: leche texturizada con un toque sutil o generoso de espresso. $1.900</p>
                                 </div>
                                 <div class="item-menu-foto">
-                                    <img src="assets/cafe-lagrima.jpg" alt="Café cortado clásico servido en taza">
+                                    <img src="assets/cafe-lagrima.jpg" alt="Café cortado clásico servido en taza" loading="lazy">
                                 </div>
                             </div>
                             <div class="item-menu-tarjeta">
@@ -138,7 +141,7 @@
                                     <p class="descripcion-item">Doble ristretto con una capa fina de leche microtexturizada, ideal para sabores intensos. $2.400</p>
                                 </div>
                                 <div class="item-menu-foto">
-                                    <img src="assets/cafe-filtrado.jpg" alt="Flat White con arte latte">
+                                    <img src="assets/cafe-filtrado.jpg" alt="Flat White con arte latte" loading="lazy">
                                 </div>
                             </div>
                             <div class="item-menu-tarjeta">
@@ -147,46 +150,55 @@
                                     <p class="descripcion-item">Café de especialidad filtrado por método artesanal, resaltando notas frutales y acidez limpia. $2.800</p>
                                 </div>
                                 <div class="item-menu-foto">
-                                    <img src="assets/cafe-ristretto.jpg" alt="Método de filtrado manual v60">
+                                    <img src="assets/cafe-ristretto.jpg" alt="Método de filtrado manual v60" loading="lazy">
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
         </section>
 
-        <!-- Sección ubicación y formulario -->
+        
         <section class="seccion-contenedor" id="where">
             <div class="contenido-centrado">
                 <h2 class="titulo-seccion"><span class="etiqueta-ancha">DÓNDE ENCONTRARNOS</span></h2>
                 <p>Te esperamos en pleno centro comercial de la Ciudad de Corrientes para disfrutar del mejor ambiente climatizado y Wi-Fi de alta velocidad.</p>
-                <!-- Mapa -->
-                <img src="assets/map.jpg" alt="Mapa urbano abstracto de ubicación de la cafetería" class="imagen-responsiva">
+                
+                <img src="assets/map.jpg" alt="Mapa urbano abstracto de ubicación de la cafetería" class="imagen-responsiva" loading="lazy">
                 <p class="informacion-catering"><span class="etiqueta">Catering Empresarial:</span> Llevamos la barra de café de especialidad y la pastelería artesanal a tus eventos corporativos o reuniones privadas en la región del NEA.</p>
                 <p><strong>Reservá tu mesa</strong> para reuniones o eventos de media tarde:</p>
                 
+            
                 <form action="#" method="POST" class="formulario-contacto">
                     <div class="campo-grupo">
-                        <input type="text" placeholder="Nombre y Apellido" required name="nombre">
+                        <label for="nombre">Nombre y Apellido</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Ej: María Pérez" required>
                     </div>
                     <div class="campo-grupo">
-                        <input type="number" placeholder="Cantidad de personas" required name="personas" min="1" max="10">
+                        <label for="personas">Cantidad de personas</label>
+                        <input type="number" id="personas" name="personas" placeholder="1 a 10 personas" required min="1" max="10">
                     </div>
                     <div class="campo-grupo">
-                        <input type="datetime-local" required name="fecha">
+                        <label for="fecha">Fecha y hora de reserva</label>
+                        <input type="datetime-local" id="fecha" name="fecha" required>
                     </div>
                     <div class="campo-grupo">
-                        <input type="text" placeholder="¿Alguna preferencia? (Ej: Mesa interna, celíacos, vegetarianos)" required name="mensaje">
+                        <label for="mensaje">Preferencias o Comentarios</label>
+                        <textarea id="mensaje" name="mensaje" rows="4" placeholder="Ej: Mesa interna, celíacos, vegetarianos" required></textarea>
                     </div>
                     <button type="submit" class="boton-enviar">CONFIRMAR RESERVA</button>
                 </form>
             </div>
         </section>
     </main>
+
     <footer class="pie-pagina">
         <address>
-            Desarrollado  por <a href="https://github.com" target="_blank" rel="noopener noreferrer">Facundo</a>.
+            Desarrollado por <a href="https://github.com" target="_blank" rel="noopener noreferrer">Facundo</a>.
         </address>
         <p class="copyright">&copy; 2026 The Cafe. Todos los derechos reservados. Corrientes, Argentina.</p>
     </footer>
-</html>    
+   
+</body>
+</html>

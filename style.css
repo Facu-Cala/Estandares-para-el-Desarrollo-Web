@@ -1,7 +1,6 @@
-@import url('https://googleapis.com');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
 
 :root {
-    /* Paleta de colores */
     --color-principal: #2c1b11;    
     --color-acento: #c6a07b;       
     --color-oscuro: #111111;       
@@ -9,8 +8,8 @@
     --color-claro: #ffffff;
     --color-fondo: #fdfcfb;        
     --color-bloque-menu: #f9f6f0;  
-    
-    /* Tipografías */
+    --color-input-bg: #fafafa;
+    --color-input-border: #e0e0e0;
     --fuente-moderna: 'Inter', system-ui, -apple-system, sans-serif;
     --shadow-moderna: 0 10px 30px rgba(0, 0, 0, 0.04);
     --shadow-tarjeta: 0 15px 35px rgba(44, 27, 17, 0.08);
@@ -38,10 +37,10 @@ body {
     overflow-x: hidden;
 }
 
-.contenido-pagina {
-    margin-top: 0; /
-}
 
+.contenido-pagina {
+    margin-top: 0;
+}
 
 .nav {
     position: fixed;
@@ -72,6 +71,7 @@ body {
     text-transform: uppercase;
     letter-spacing: 2px;
     color: var(--color-principal);
+    text-decoration: none;
 }
 
 .enlaces-contenedor {
@@ -94,7 +94,6 @@ body {
     color: var(--color-acento);
 }
 
-/* Línea animada inferior al hacer hover */
 .enlace-menu::after {
     content: '';
     position: absolute;
@@ -110,7 +109,6 @@ body {
     width: 100%;
 }
 
-/* Banner principal*/
 .banner {
     position: relative;
     height: 100vh;
@@ -126,7 +124,6 @@ body {
     padding: 0 1.5rem;
 }
 
-
 .banner-overlay {
     position: absolute;
     top: 0;
@@ -141,7 +138,6 @@ body {
     position: relative;
     z-index: 2;
     max-width: 800px;
-    animation: fadeInUp Moderno 1s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .etiqueta-banner {
@@ -208,7 +204,6 @@ body {
     box-shadow: 0 15px 30px rgba(198, 160, 123, 0.3);
 }
 
-/* Seccion sobre nosotros*/
 .seccion-about {
     padding: 9rem 2rem;
     max-width: 1200px;
@@ -236,7 +231,7 @@ body {
     margin-bottom: 0.6rem;
 }
 
-.titulo-seccion- {
+.titulo-seccion {
     font-size: 2.8rem;
     font-weight: 800;
     color: var(--color-principal);
@@ -259,19 +254,18 @@ body {
     font-size: 1.05rem;
 }
 
-
 .cita-bloque {
     margin-top: 2.5rem;
     padding-left: 1.5rem;
     border-left: 3px solid var(--color-acento);
 }
 
-.texto-cita {
+.about-col-texto .texto-cita {
     font-style: italic;
     font-size: 1.1rem;
-    color: var(--color-principal) !important;
+    color: var(--color-principal);
     line-height: 1.6;
-    margin-bottom: 0.6rem !important;
+    margin-bottom: 0.6rem;
 }
 
 .autor-cita {
@@ -282,7 +276,6 @@ body {
     color: var(--color-acento);
 }
 
-/* Columnas */
 .about-col-derecha {
     flex: 0.9;
     min-width: 320px;
@@ -291,27 +284,6 @@ body {
     justify-content: center;
 }
 
-.contenedor-imagen-borde {
-    width: 100%;
-    max-width: 440px;
-    border-radius: 16px;
-    overflow: hidden;
-    box-shadow: var(--shadow-tarjeta);
-}
-
-.imagen-about-principal {
-    width: 100%;
-    height: auto;
-    display: block;
-    object-fit: cover;
-    transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.contenedor-imagen-borde:hover .imagen-about-principal {
-    transform: scale(1.04);
-}
-
-/* Tarjeta flotante info */
 .tarjeta-info-flotante {
     position: absolute;
     bottom: -35px;
@@ -352,20 +324,15 @@ body {
     margin-bottom: 0;
 }
 
-/* Seccion menú*/
 .seccion-contenedor {
     padding: 8rem 2rem;
-    background-color: #faf8f5;
+    background-color: var(--color-bloque-menu);
 }
 
 .contenido-centrado {
     max-width: 1200px;
     margin: 0 auto;
     text-align: center;
-}
-
-.titulo-seccion {
-    margin-bottom: 4rem;
 }
 
 .etiqueta-ancha {
@@ -376,7 +343,6 @@ body {
     text-transform: uppercase;
 }
 
-/* Grilla principal de la carta*/
 .carta-estatica-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -385,7 +351,6 @@ body {
     margin-bottom: 4rem;
 }
 
-/* Estilo para los títulos de cada categoria */
 .titulo-columna-menu {
     font-size: 1.6rem;
     font-weight: 800;
@@ -396,14 +361,12 @@ body {
     letter-spacing: -0.5px;
 }
 
-/* Sub-grilla interna de comida/bebida */
 .panel-menu-estatico {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
 }
 
-/* Tarjetas individuales de productos con hovers */
 .item-menu-tarjeta {
     background-color: var(--color-claro);
     padding: 1.5rem;
@@ -423,7 +386,6 @@ body {
     border-color: rgba(198, 160, 123, 0.2);
 }
 
-/* Columna de informacion del producto */
 .item-menu-info {
     flex: 1;
 }
@@ -435,28 +397,26 @@ body {
     margin-bottom: 0.5rem;
 }
 
-/* Contenedor imagen de las comidas*/
 .item-menu-foto {
     width: 80px;
     height: 80px;
     border-radius: 8px;
     overflow: hidden;
-    flex-shrink: 0; /* Evita que la imagen se achique si el texto es largo */
+    flex-shrink: 0;
     box-shadow: 0 4px 10px rgba(0,0,0,0.05);
 }
 
 .item-menu-foto img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Hace que la imagen se encuadre perfecto sin deformarse */
+    object-fit: cover;
     transition: transform 0.5s ease;
 }
 
 .item-menu-tarjeta:hover .item-menu-foto img {
-    transform: scale(1.08); /* Sutil efecto zoom en la comida al hacer hover */
+    transform: scale(1.08);
 }
 
-/* Imagenes promocionales inferiores */
 .imagen-responsiva {
     width: 100%;
     max-width: 900px;
@@ -466,23 +426,6 @@ body {
     object-fit: cover;
 }
 
-.espacio-superior {
-    margin-top: 4.5rem;
-}
-
-/* menú responisve */
-@media (max-width: 992px) {
-    .carta-estatica-grid {
-        grid-template-columns: 1fr; /* Pasa a una sola columna en tablets y celulares */
-        gap: 4rem;
-    }
-    
-    .seccion-contenedor {
-        padding: 5rem 1.2rem;
-    }
-}
-
-/* Seccion ubicaion y formulario*/
 #where {
     padding: 8rem 2rem;
     background-color: var(--color-fondo);
@@ -496,12 +439,12 @@ body {
     font-size: 1.1rem;
 }
 
-.informacion-catering {
+#where .informacion-catering {
     background-color: var(--color-bloque-menu);
     padding: 1.5rem;
     border-radius: 8px;
     border-left: 4px solid var(--color-principal);
-    margin: 3.5rem auto !important;
+    margin: 3.5rem auto;
     text-align: left;
     max-width: 850px;
 }
@@ -514,11 +457,10 @@ body {
     letter-spacing: 1px;
 }
 
-/* Tarjeta contenedora del Formulario */
 .formulario-contacto {
     max-width: 600px;
     margin: 4rem auto 0 auto;
-    background: var(--color-claro) !important;
+    background: var(--color-claro);
     padding: 3.5rem;
     border-radius: 16px;
     box-shadow: var(--shadow-tarjeta);
@@ -526,9 +468,8 @@ body {
     text-align: left;
     display: flex;
     flex-direction: column;
-    gap: 2rem; /* Separa los campos de forma automática y simétrica */
+    gap: 2rem;
 }
-
 
 .campo-grupo {
     display: flex;
@@ -536,7 +477,6 @@ body {
     gap: 0.5rem;
     width: 100%;
 }
-
 
 .campo-grupo label {
     font-size: 0.85rem;
@@ -546,12 +486,12 @@ body {
     color: var(--color-principal);
 }
 
-
-.formulario-contacto input {
+.formulario-contacto input,
+.formulario-contacto textarea {
     width: 100%;
-    padding: 1rem 0.6rem;
-    background-color: #fafafa; /* Fondo sutil para destacar el área de escritura */
-    border: 1px solid #e0e0e0;
+    padding: 1rem 0.8rem;
+    background-color: var(--color-input-bg);
+    border: 1px solid var(--color-input-border);
     border-radius: 8px;
     font-family: var(--fuente-moderna);
     font-size: 1rem;
@@ -560,18 +500,16 @@ body {
     outline: none;
 }
 
+.formulario-contacto textarea {
+    resize: vertical;
+}
 
-.formulario-contacto input:focus {
+.formulario-contacto input:focus,
+.formulario-contacto textarea:focus {
     border-color: var(--color-acento);
     background-color: var(--color-claro);
     box-shadow: 0 0 0 4px rgba(198, 160, 123, 0.15);
 }
-
-/* fecha en navegadores */
-.formulario-contacto input[type="datetime-local"] {
-    color: var(--color-oscuro);
-}
-
 
 .boton-enviar {
     width: 100%;
@@ -598,8 +536,70 @@ body {
     box-shadow: 0 10px 25px rgba(198, 160, 123, 0.35);
 }
 
-/* From responsive */
+.pie-pagina {
+    background-color: var(--color-principal);
+    color: var(--color-claro);
+    text-align: center;
+    padding: 3rem 1.5rem;
+}
+
+.pie-pagina address {
+    font-style: normal;
+    margin-bottom: 0.5rem;
+}
+
+.pie-pagina a {
+    color: var(--color-acento);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.pie-pagina a:hover {
+    text-decoration: underline;
+}
+
+.pie-pagina .copyright {
+    font-size: 0.85rem;
+    opacity: 0.8;
+}
+
+@media (max-width: 992px) {
+    .contenedor-about-grid {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .carta-estatica-grid {
+        grid-template-columns: 1fr;
+        gap: 4rem;
+    }
+    
+    .seccion-contenedor {
+        padding: 5rem 1.2rem;
+    }
+}
+
 @media (max-width: 768px) {
+    .contenedor-menu {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .enlaces-contenedor {
+        gap: 1.2rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .titulo-banner {
+        font-size: 3.5rem;
+    }
+
+    .subtitulo-banner {
+        font-size: 1.1rem;
+    }
+
     .formulario-contacto {
         padding: 2.2rem 1.5rem;
     }
