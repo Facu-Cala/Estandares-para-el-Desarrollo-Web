@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
-
 :root {
     --color-principal: #2c1b11;    
     --color-acento: #c6a07b;       
@@ -119,7 +117,7 @@ body {
     background-image: url('assets/banner.jpg');
     background-size: cover;
     background-position: center;
-    background-attachment: fixed; 
+    background-attachment: scroll; 
     color: var(--color-claro);
     padding: 0 1.5rem;
 }
@@ -285,15 +283,13 @@ body {
 }
 
 .tarjeta-info-flotante {
-    position: absolute;
-    bottom: -35px;
-    right: 15px;
     background: var(--color-principal);
     color: var(--color-claro);
     padding: 2.2rem;
     border-radius: 12px;
     box-shadow: 0 20px 45px rgba(44, 27, 17, 0.25);
-    max-width: 290px;
+    width: 100%;
+    max-width: 340px;
 }
 
 .tarjeta-info-flotante h3 {
@@ -420,7 +416,8 @@ body {
 .imagen-responsiva {
     width: 100%;
     max-width: 900px;
-    height: auto;
+    aspect-ratio: 16 / 9; 
+    background-color: var(--color-bloque-menu);
     border-radius: 16px;
     box-shadow: var(--shadow-tarjeta);
     object-fit: cover;
